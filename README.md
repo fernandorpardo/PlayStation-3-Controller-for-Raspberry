@@ -123,7 +123,7 @@ Once connected execute the SW selecting the axis: 0 for left joystick, 1 for (de
 ```console
 $ ps3 -a 1
 ```
-PS3 captures the events from the driver to generates (x,y) that are sent over a linux sockect to the wilson process (or to a processs of your project with a sockect listening to port 4096).
+PS3 captures the events from the driver to generates the (x,y) coordinates of the position of the joystick, and sends these coordinates to the wilson process through a linux socket (or to a processs of your own project if it opens a sockect listening to port 4096).
 Press the triangle button to "release the breaks" (note the front light turns on) and play with the joystick to move the vehicle.
 
 
